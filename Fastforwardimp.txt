@@ -1,0 +1,209 @@
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git log --oneline
+6de7b4c (HEAD -> master) Revert "WI3 Filetobe deleted is remove"
+7d5c59b WI3 Filetobe deleted is remove
+6bc569d WI2:file created
+416c210 ignore file is added
+07259f8 WI2:file1 add company name
+e3bc7e0 WI1:file1 middle name is add
+8794436 WI1:File1 modified add name
+958a43e WI1:File1 created with hello world
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git reset --hard head-3
+fatal: ambiguous argument 'head-3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git reset --hard Head-3
+fatal: ambiguous argument 'Head-3': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git reset --Hard Head-3
+error: unknown option `Hard'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --stdin               DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git log --oneline
+6de7b4c (HEAD -> master) Revert "WI3 Filetobe deleted is remove"
+7d5c59b WI3 Filetobe deleted is remove
+6bc569d WI2:file created
+416c210 ignore file is added
+07259f8 WI2:file1 add company name
+e3bc7e0 WI1:file1 middle name is add
+8794436 WI1:File1 modified add name
+958a43e WI1:File1 created with hello world
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git branch
+* master
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git branch bug1
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git branch
+  bug1
+* master
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git breanch
+git: 'breanch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git branch
+* bug1
+  master
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git log --oneline
+6de7b4c (HEAD -> bug1, master) Revert "WI3 Filetobe deleted is remove"
+7d5c59b WI3 Filetobe deleted is remove
+6bc569d WI2:file created
+416c210 ignore file is added
+07259f8 WI2:file1 add company name
+e3bc7e0 WI1:file1 middle name is add
+8794436 WI1:File1 modified add name
+958a43e WI1:File1 created with hello world
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git status
+On branch bug1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git commit -am "bug1:file1 updated with 1 to fix bug1 using arrow"
+[bug1 c661514] bug1:file1 updated with 1 to fix bug1 using arrow
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git status
+On branch bug1
+nothing to commit, working tree clean
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git log --ooneline
+fatal: unrecognized argument: --ooneline
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git log --oneline
+c661514 (HEAD -> bug1) bug1:file1 updated with 1 to fix bug1 using arrow
+6de7b4c (master) Revert "WI3 Filetobe deleted is remove"
+7d5c59b WI3 Filetobe deleted is remove
+6bc569d WI2:file created
+416c210 ignore file is added
+07259f8 WI2:file1 add company name
+e3bc7e0 WI1:file1 middle name is add
+8794436 WI1:File1 modified add name
+958a43e WI1:File1 created with hello world
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (bug1)
+$ git checkout master
+Switched to branch 'master'
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git log --oneline
+6de7b4c (HEAD -> master) Revert "WI3 Filetobe deleted is remove"
+7d5c59b WI3 Filetobe deleted is remove
+6bc569d WI2:file created
+416c210 ignore file is added
+07259f8 WI2:file1 add company name
+e3bc7e0 WI1:file1 middle name is add
+8794436 WI1:File1 modified add name
+958a43e WI1:File1 created with hello world
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git branch
+  bug1
+* master
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git merage bug1
+git: 'merage' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git merge bug1
+Updating 6de7b4c..c661514
+Fast-forward
+ File1.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git log --oneline
+c661514 (HEAD -> master, bug1) bug1:file1 updated with 1 to fix bug1 using arrow
+6de7b4c Revert "WI3 Filetobe deleted is remove"
+7d5c59b WI3 Filetobe deleted is remove
+6bc569d WI2:file created
+416c210 ignore file is added
+07259f8 WI2:file1 add company name
+e3bc7e0 WI1:file1 middle name is add
+8794436 WI1:File1 modified add name
+958a43e WI1:File1 created with hello world
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git branch -d bug1
+Deleted branch bug1 (was c661514).
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git branch
+* master
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$ git log --oneline
+c661514 (HEAD -> master) bug1:file1 updated with 1 to fix bug1 using arrow
+6de7b4c Revert "WI3 Filetobe deleted is remove"
+7d5c59b WI3 Filetobe deleted is remove
+6bc569d WI2:file created
+416c210 ignore file is added
+07259f8 WI2:file1 add company name
+e3bc7e0 WI1:file1 middle name is add
+8794436 WI1:File1 modified add name
+958a43e WI1:File1 created with hello world
+
+swapnil@DESKTOP-CIF09S3 MINGW64 /f/Persistent Training Java Devops/8 GIT/NewProject (master)
+$
